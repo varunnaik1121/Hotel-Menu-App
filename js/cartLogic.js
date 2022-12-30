@@ -6,8 +6,14 @@ console.log(increaseBtn);
 
 const updateTotal = () => {
   const allNodes = document.querySelectorAll('.cart-card');
-  console.log(allNodes);
+  allNodes.forEach((eachNode) => {
+    let price =
+      eachNode.children[1].childNodes[3].childNodes[1].children[1].textContent;
+    console.log(price);
+  });
 };
+
+updateTotal();
 increaseBtn.forEach((incBtn) => {
   incBtn.addEventListener('click', (e) => {
     let ele = e.target.parentElement.children[1];
@@ -25,8 +31,6 @@ increaseBtn.forEach((incBtn) => {
     // }
   });
 });
-
-updateTotal();
 
 decreaseBtn.forEach((decBtn) => {
   decBtn.addEventListener('click', (e) => {

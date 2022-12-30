@@ -268,6 +268,7 @@
 .cart-total h5{
     font-size: 24px;
     margin-top: 20px;
+
 }
 .delete{
     position: absolute;
@@ -285,4 +286,47 @@ align-items: center;
 font-size: 16px;
 cursor: pointer;
 
+}
+.buy-btn{
+    padding: 10px 20px ;
+    background: rgba(0,0,0,.9);
+    color: var(--white);
+    margin-top: 20px;
+    
+}
+.login-container{
+    width: 100%;
+    min-height: 90vh;
+  
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.2);
+    color: rgba(0,0,0,.6);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.login-container button:hover{
+    color: rgba(0,0,0,.7);
+
+}
+.login-container img{
+    width: 35px;
+    height: 35px;
+
+}
+.login-container h3{
+    text-transform: capitalize;
 }
