@@ -97,7 +97,7 @@ header .navbar a{
 header .navbar a.active,
 header .navbar a:hover{
     color:#fff;
-    background: var(--green);
+    background: rgba(0,0,0,.9);
 }
 
 header .icons i,
@@ -712,6 +712,32 @@ header .icons #menu-bars{
 }
 .dish-info::-webkit-scrollbar{
     display: none;
+}
+.avatar{
+    /* border: 1px solid red; */
+  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.avatar__image{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: inherit;
+  
+}
+.avatar h6{
+    font-size: 12px;
+   
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,.9);
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+
 }
 
 
