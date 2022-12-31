@@ -8,7 +8,9 @@ if (
     .querySelector('.cart-container')
     .children[0].classList.contains('cart-card') === false
 ) {
-  document.querySelector('.cart-container').innerHTML = `<div class="empty-cart-container">
+  document.querySelector(
+    '.cart-container'
+  ).innerHTML = `<div class="empty-cart-container">
   <h5 class="dish-title">Cart Is Empty</h5>
   <a href="./TodaysMenuPage.html" class="empty">Add Items</a>
   </div>`;
@@ -38,9 +40,12 @@ window.addEventListener('DOMContentLoaded', updateCartTotal);
 increaseBtn.forEach((incBtn) => {
   incBtn.addEventListener('click', (e) => {
     let ele = e.target.parentElement.children[1];
+    let currentInput = e.target.parentElement.children[2];
     let value = Number(ele.textContent);
     if (value >= 1) {
       ele.textContent = value += 1;
+      currentInput.value = ele.textContent;
+      console.log('this si input', currentInput.value);
       updateCartTotal();
     } else {
       return;
@@ -51,9 +56,12 @@ increaseBtn.forEach((incBtn) => {
 decreaseBtn.forEach((decBtn) => {
   decBtn.addEventListener('click', (e) => {
     let ele = e.target.parentElement.children[1];
+    let currentInput = e.target.parentElement.children[2];
     let value = Number(ele.textContent);
     if (value >= 2) {
       ele.textContent = value -= 1;
+      currentInput.value = ele.textContent;
+      console.log('this si input', currentInput.value);
       updateCartTotal();
     } else {
       return;
