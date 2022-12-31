@@ -33,7 +33,7 @@ const updateCartTotal = () => {
     });
   }
   document.querySelector('.total-amount').innerHTML = total;
-  console.log(total);
+  document.querySelector('.cart-total-hidden').value = total;
 };
 window.addEventListener('DOMContentLoaded', updateCartTotal);
 
