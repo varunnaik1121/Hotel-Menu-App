@@ -374,12 +374,14 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 
     
     
 }
 .modal{
     width: 45%;
+    
    
    
     background-color:white;
@@ -463,4 +465,9 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.hidden{
+  
+    display: none;
+
 }

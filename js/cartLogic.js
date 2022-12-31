@@ -3,11 +3,19 @@ const increaseBtn = document.querySelectorAll('.increase');
 const decreaseBtn = document.querySelectorAll('.decrease');
 const deleteBtn = document.querySelectorAll('.delete');
 const cartModalTotal = document.querySelector('.cart-modal-total');
-const closeBtn = document.querySelector(".close-btn")
+const closeBtn = document.querySelector('.close-btn');
+const totalAmount = document.querySelector('.total-amount');
+const modalContainer = document.querySelector('.modal-container');
+const buyBtn = document.querySelector('.buy-btn');
 
-closeBtn.addEventListener("click",()=>{
-  
-})
+closeBtn.addEventListener('click', () => {
+  modalContainer.classList.add('hidden');
+  console.log('hello');
+});
+
+buyBtn.addEventListener('click', () => {
+  modalContainer.classList.remove('hidden');
+});
 
 if (
   document
@@ -37,7 +45,8 @@ const updateCartTotal = () => {
         total +
         parseFloat(priceTag.innerText) * parseFloat(quantityTag.innerText);
     });
-
+    cartModalTotal.innerHTML = total;
+    document.querySelector('.cart-modal-total-hidden').value = total;
   }
   document.querySelector('.total-amount').innerHTML = total;
   document.querySelector('.cart-total-hidden').value = total;
