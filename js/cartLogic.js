@@ -45,7 +45,6 @@ increaseBtn.forEach((incBtn) => {
     if (value >= 1) {
       ele.textContent = value += 1;
       currentInput.value = ele.textContent;
-      console.log('this si input', currentInput.value);
       updateCartTotal();
     } else {
       return;
