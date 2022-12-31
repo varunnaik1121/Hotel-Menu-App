@@ -259,6 +259,7 @@
     margin: 0;
     padding: 20px 0;
     background-color: var(--white);
+    position: relative;
 
 }
 .cart-price{
@@ -361,4 +362,105 @@ cursor: pointer;
     align-items: center;
     gap: 20px;
 
+}
+.modal-container{
+    position: absolute;
+    width: 100%;
+   min-height: 100vh;
+    
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+.modal{
+    width: 45%;
+   
+   
+    background-color:white;
+    padding: 20px 35px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.2);
+    position: relative;
+}
+.modal-title{
+    font-size: 20px;
+    font-size: 500 !important;
+    text-align: center;
+    
+}
+.modal div{
+    display: flex;
+    width: 100%;
+   
+
+}
+.modal div input {
+    padding: 10px 20px;
+    width: 100%;
+    margin: 15px;
+    outline:2px solid  rgba(0,0,0,.2);
+    font-weight: 500;
+    font-size: 16px;
+   
+
+}
+.modal div input::placeholder{
+    font-weight: 500;
+    font-size: 16px;
+}
+.modal div input:focus{
+    outline: 2px solid rgba(0,0,0,.6);
+}
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+   
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+  
+}
+.close-btn button{
+    padding: 8px 15px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color:rgba(0,0,0,.9);
+    color: white;
+}
+.cart-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cart-info h4{
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+.cart-info div p{
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 500;
+}
+.cart-modal-total{
+    font-weight: 500;
+
+}
+.order-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
