@@ -60,8 +60,8 @@ increaseBtn.forEach((incBtn) => {
     let value = Number(ele.textContent);
     if (value >= 1) {
       ele.textContent = value += 1;
-      currentInput.value = ele.textContent;
-      console.log('this si input', currentInput.value);
+      currentInput.value = value;
+      console.log('this is input', currentInput.value);
 
       updateCartTotal();
     } else {
@@ -77,8 +77,8 @@ decreaseBtn.forEach((decBtn) => {
     let value = Number(ele.textContent);
     if (value >= 2) {
       ele.textContent = value -= 1;
-      currentInput.value = ele.textContent;
-      console.log('this si input', currentInput.value);
+      currentInput.value = value;
+      console.log('this is input', currentInput.value);
       updateCartTotal();
     } else {
       return;
