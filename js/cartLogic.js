@@ -56,12 +56,12 @@ window.addEventListener('DOMContentLoaded', updateCartTotal);
 increaseBtn.forEach((incBtn) => {
   incBtn.addEventListener('click', (e) => {
     let ele = e.target.parentElement.children[1];
-    let currentInput = e.target.parentElement.children[2];
+    let currentInput = e.target.parentElement.children[3];
     let value = Number(ele.textContent);
     if (value >= 1) {
       ele.textContent = value += 1;
+      console.log('thisis input tag', currentInput);
       currentInput.value = value;
-      console.log('this is input', currentInput.value);
 
       updateCartTotal();
     } else {
@@ -73,7 +73,7 @@ increaseBtn.forEach((incBtn) => {
 decreaseBtn.forEach((decBtn) => {
   decBtn.addEventListener('click', (e) => {
     let ele = e.target.parentElement.children[1];
-    let currentInput = e.target.parentElement.children[2];
+    let currentInput = e.target.parentElement.children[3];
     let value = Number(ele.textContent);
     if (value >= 2) {
       ele.textContent = value -= 1;
