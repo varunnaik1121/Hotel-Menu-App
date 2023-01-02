@@ -189,6 +189,7 @@
     /* border: 1px solid red; */
    
     animation: none;
+    margin-top: 20px;
 }
 .rating-container span{
     font-size: 14px;
