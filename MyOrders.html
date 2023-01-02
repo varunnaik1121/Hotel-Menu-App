@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/TodaysMenuStyle.css">
+    <link rel="stylesheet" href="./Rating.css">
 </head>
 
 <body>
@@ -16,12 +17,12 @@
         <a href="#" class="logo">Foody</a>
 
         <nav class="navbar">
-            <a href="#home">home</a>
+            <a href="./index.html">home</a>
             <a href="#dishes">dishes</a>
             <a href="./TodaysMenuPage.html">Menu</a>
             <a href="./cart.html">cart</a>
             <a href="./MyOrders.html">My Orders</a>
-            <a href="#order">order</a>
+            <a href="./Rating.html">Rating</a>
         </nav>
 
         <div class="icons">
@@ -50,9 +51,53 @@
                     <p>1</p>
 
                 </div class="myorder-wrapper">
-                <div>
+                <div class="btn-container-order">
                     <button class="myorders-btn">cancel order</button>
+                    <div class="rating-container">
+
+                        <img src="./images/icons8-star-50.png" class="star" id="1" />
+                        <img src="./images/icons8-star-50.png" class="star" id="2" />
+                        <img src="./images/icons8-star-50.png" class="star" id="3" />
+                        <img src="./images/icons8-star-50.png" class="star" id="4" />
+                        <img src="./images/icons8-star-50.png" class="star" id="5" />
+                        <input type="hidden" value="5" class="hidden-rating" />
+
+                    </div>
                 </div>
+            </div>
+            <div class="order">
+                <div class="order-image-wrapper myorder-wrapper">
+                    <img src="./images/dish-4.png" />
+                </div>
+                <div class="myorder-wrapper">
+                    <h3 class="myorders-title">Green salad with the wave</h3>
+                </div>
+                <div class="myorder-wrapper">
+                    <p>1</p>
+
+                </div class="myorder-wrapper">
+                <div class="btn-container-order">
+                    <button class="myorders-btn">cancel order</button>
+                    <div class="rating-container">
+                        <img src="./images/icons8-star-50.png" class="star" id="1" />
+                        <img src="./images/icons8-star-50.png" class="star" id="2" />
+                        <img src="./images/icons8-star-50.png" class="star" id="3" />
+                        <img src="./images/icons8-star-50.png" class="star" id="4" />
+                        <img src="./images/icons8-star-50.png" class="star" id="5" />
+                        <input type="hidden" value="" class="hidden-rating" />
+                    </div>
+
+                    <!-- render this only for if value is present in database -->
+                    <!-- <div class="rating-container disabled-rating">
+
+                        <img src="./images/start.png" class="star-1" />
+                        <img src="./images/start.png" class="star-1" />
+                        <img src="./images/start.png" class="star-1" />
+                        <img src="./images/start.png" class="star-1" />
+                        <img src="./images/start.png" class="star-1" />
+                    </div> -->
+                </div>
+
 
             </div>
             <div class="order">
@@ -66,29 +111,23 @@
                     <p>1</p>
 
                 </div class="myorder-wrapper">
-                <div>
+                <div class="btn-container-order">
                     <button class="myorders-btn">cancel order</button>
-                </div>
+                    <div class="rating-container">
+                        <img src="./images/icons8-star-50.png" class="star" id="1" />
+                        <img src="./images/icons8-star-50.png" class="star" id="2" />
+                        <img src="./images/icons8-star-50.png" class="star" id="3" />
+                        <img src="./images/icons8-star-50.png" class="star" id="4" />
+                        <img src="./images/icons8-star-50.png" class="star" id="5" />
+                        <input type="hidden" value="" class="hidden-rating" />
+                    </div>
 
-            </div>
-            <div class="order">
-                <div class="order-image-wrapper myorder-wrapper">
-                    <img src="./images/dish-4.png" />
-                </div>
-                <div class="myorder-wrapper">
-                    <h3 class="myorders-title">Green salad with the wave</h3>
-                </div>
-                <div class="myorder-wrapper">
-                    <p>1</p>
-
-                </div class="myorder-wrapper">
-                <div>
-                    <button class="myorders-btn">cancel order</button>
                 </div>
 
             </div>
         </div>
     </section>
+    <script src="js/cartLogic.js"></script>
 </body>
 
 </html>

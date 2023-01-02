@@ -11,6 +11,7 @@ const buyBtn = document.querySelector('.buy-btn');
 const buyNowBtn = document.querySelectorAll('.buy-now-btn');
 const modalMenuContainer = document.querySelector('.modal-container-menu');
 const globalInputHidden = document.querySelector('.global-hidden-input');
+const starts = document.querySelectorAll('.star');
 
 console.log(buyNowBtn);
 
@@ -23,6 +24,15 @@ buyNowBtn.forEach((btn) => {
       e.target.parentElement.parentElement.parentElement.children[0];
     globalInputHidden.value = inputHidden.value;
     console.log(globalInputHidden.value);
+  });
+});
+
+starts.forEach((star) => {
+  star.addEventListener('click', (e) => {
+    console.log(e.target.id);
+    let lastChildren = e.target.parentElement.children[5];
+    lastChildren.value = e.target.id;
+    
   });
 });
 
