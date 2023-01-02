@@ -51,6 +51,7 @@
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0,0,0,.2);
     overflow: hidden;
+    height: 220px;
   
    
 
@@ -77,6 +78,9 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0 5px;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+    
 }
 .menu-details p{
     max-height: 20px;
@@ -159,8 +163,16 @@
 }
 .menu-title-container > p{
     font-size: 12px !important;
+   max-height: 35px;
+   overflow-y: scroll;
 
 }
+
+.menu-title-container > p::-webkit-scrollbar{
+    display: none;
+}
+
+
 .active{
    background-color: rgba(0,0,0,.2);;
 
@@ -270,7 +282,7 @@
 .section-3{
     width: 100%;
     min-height: 100vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 20px 0;
     background-color: var(--white);
@@ -491,7 +503,7 @@ cursor: pointer;
     position: absolute;
     left: 0;
     right: 0;
-   filter: grayscale(4);
+   opacity: 80%;
    pointer-events: none;
    
 
@@ -505,7 +517,7 @@ cursor: pointer;
 
     font-weight: 500;
   
-   background-color: black;
+   background-color: rgba(0,0,0,.8);
     padding: 2px 10px;
     left: 10px;
     color: white;

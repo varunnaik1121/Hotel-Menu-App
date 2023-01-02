@@ -10,6 +10,7 @@ const modalContainer = document.querySelector('.modal-container');
 const buyBtn = document.querySelector('.buy-btn');
 const buyNowBtn = document.querySelectorAll('.buy-now-btn');
 const modalMenuContainer = document.querySelector('.modal-container-menu');
+const globalInputHidden = document.querySelector('.global-hidden-input');
 
 console.log(buyNowBtn);
 
@@ -18,6 +19,10 @@ buyNowBtn.forEach((btn) => {
     modalContainer.classList.remove('hidden');
     let individualPrice = e.target.parentElement.children[0].innerText;
     cartModalTotalMenu.innerHTML = individualPrice;
+    let inputHidden =
+      e.target.parentElement.parentElement.parentElement.children[0];
+    globalInputHidden.value = inputHidden.value;
+    console.log(globalInputHidden.value);
   });
 });
 
